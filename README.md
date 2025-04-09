@@ -13,16 +13,20 @@ Target: LUNG_CANCER (Yes/No)
 Data Cleaning:
 - Removed duplicates
 - Handled categorical features using LabelEncoder
+  
 Preprocessing:
 - Balanced the dataset using RandomOverSampler from imblearn
 - Scaled numerical features (like Age) using StandardScaler
 - Transformed binary/categorical values for ML-friendliness
+  
 Model Training:
 - Used LightGBM Classifier (LGBM) for training the predictive model
 - Split data using train_test_split with stratification to maintain label balance
+  
 Evaluation:
 - Evaluated model using confusion matrix, classification report, and accuracy score
 - Achieved accurate predictions with good balance of precision and recall
+  
 Prediction:
 - Included functionality to test with custom input data
 
